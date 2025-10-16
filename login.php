@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-// Daftar user yang valid (hardcoded)
 $valid_users = [
     [
         'email' => 'user@untan.ac.id',
@@ -14,7 +13,6 @@ $valid_users = [
     ]
 ];
 
-// Proses login
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     $email = isset($_POST['email']) ? trim($_POST['email']) : '';
